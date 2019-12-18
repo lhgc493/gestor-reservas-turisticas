@@ -11,6 +11,7 @@ import { LoginGuardGuard } from '../services/index.service';
 
 // import { RolComponent } from './mantenimientos/rol/rol.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -25,6 +26,7 @@ const pagesRoutes: Routes = [
        { path: 'grafica1', component: Grafica1Component },
        { path: 'progress', component: ProgressComponent },
        { path: 'account-setting', component: AccountSettingsComponent },
+       { path: 'perfil', component: ProfileComponent, data: {titulo: 'Perfil de usuario'} },
        { path: 'mantenimientos', component: MantenimientosComponent },
        { path: 'rxjs', component: RxjsComponent },
       // { path: 'mantenimientos/rol', component: RolComponent },

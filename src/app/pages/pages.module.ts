@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 
 import { FormsModule } from '@angular/forms';
@@ -16,6 +16,11 @@ import { MantenimientosComponent } from './mantenimientos/mantenimientos.compone
 import { MantenimientoModule } from './mantenimientos/mantenimientos.module';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
+// pipe module
+import { PipesModule } from '../pipes/pipes.module';
+import { ProfileComponent } from './profile/profile.component';
+
+
 
 
 
@@ -29,6 +34,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         AccountSettingsComponent,
         MantenimientosComponent,
         RxjsComponent,
+        ProfileComponent,
 
     ],
     exports: [
@@ -38,10 +44,12 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         MantenimientosComponent
     ],
     imports: [
+        CommonModule,
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
-        MantenimientoModule
+        MantenimientoModule,
+        PipesModule
     ]
 })
 

@@ -20,6 +20,7 @@ import { ServiceModule } from './services/service.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+// import { ImagenPipe } from './pipes/imagen.pipe'; para q no se llene de pipes
 
 
 
@@ -29,7 +30,8 @@ import { RegisterComponent } from './login/register.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    // ImagenPipe
   ],
   imports: [
     BrowserModule,

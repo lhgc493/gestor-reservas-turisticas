@@ -8,13 +8,15 @@ import { RouterModule } from '@angular/router';
 
 // para que funcione los ngfor
 import { CommonModule } from '@angular/common';
+import { PipesModule } from '../pipes/pipes.module';
 
 
 // agregar imports agregar router module
 @NgModule({
     imports: [
         RouterModule,
-        CommonModule
+        CommonModule,
+        PipesModule
     ],
     declarations: [
         HeaderComponent,
